@@ -38,19 +38,6 @@ $(document).ready(function () {
     loop: true,
   });
 
-  var typed = new Typed(".typing-2", {
-    strings: [
-      "Student",
-      "Programming enthusiast ¯\\_(ツ)_/¯",
-      "Human",
-      "Solver",
-      "...eh...so many ah!!!",
-    ],
-    typeSpeed: 100,
-    backSpeed: 40,
-    loop: true,
-  });
-
   $(".carousel").owlCarousel({
     margin: 20,
     loop: true,

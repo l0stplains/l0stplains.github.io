@@ -162,14 +162,14 @@ img {
 }
 
 body.dark {
-  background: #121212;
+  background: #0e0e0e;
 }
 
 .home.dark,
 .about.dark,
 .skills.dark,
 .contact.dark {
-  background: #121212;
+  background: #0e0e0e;
   color: white;
 }
 
@@ -217,7 +217,7 @@ footer {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
@@ -316,7 +316,7 @@ footer {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
@@ -359,8 +359,8 @@ footer {
   background: #fefefe;
 }
 
-.skills.dark .carousel .card{
-  background: #1D1D1F;
+.skills.dark .carousel .card {
+  background: #1d1d1f;
   color: white;
 }
 
@@ -422,7 +422,7 @@ footer {
   background: #7928ca !important;
 }
 
-.skills.dark .owl-dot{
+.skills.dark .owl-dot {
   border-color: #00dfd8 !important;
 }
 
@@ -436,7 +436,7 @@ footer {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
@@ -588,24 +588,26 @@ footer {
 }
 
 footer p a {
+  color: white;
+  font-weight: bold;
+}
+
+footer p a:hover {
   background: -webkit-linear-gradient(left, #007cf0, #00dfd8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
-footer p a:hover {
-  background: -webkit-linear-gradient(left, #ff4d4d, #f9cb28);
+footer.dark {
+  background: #000000;
+}
+
+footer.dark p a {
+  background: -webkit-linear-gradient(left, #007cf0, #00dfd8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-footer.dark{
-  background: #1D1D1F;
-}
-
-footer.dark p a{
-  color: blue;
+  font-weight: bold;
 }
 
 footer.dark p a:hover {
