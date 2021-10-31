@@ -25,6 +25,15 @@ $(document).ready(function () {
     $(".navbar .menu").toggleClass("active");
   });
 
+  /*
+  $("#python-card").hover(function () {
+    $("#python-img").attr("src", "/assets/images/user-dark.png");
+  }, function(){
+    $("#python-img").attr("src", "/assets/images/python-logo.png");
+  });
+
+  */
+
   var typed = new Typed(".typing", {
     strings: [
       "Student",
