@@ -168,7 +168,8 @@ body.dark {
 .home.dark,
 .about.dark,
 .skills.dark,
-.contact.dark {
+.contact.dark,
+.experience.dark {
   background: #0e0e0e;
   color: white;
 }
@@ -208,6 +209,7 @@ section {
 .about,
 .skills,
 .contact,
+.experience,
 footer {
   font-family: "Poppins", sans-serif;
 }
@@ -367,7 +369,14 @@ footer {
 }
 
 .skills .carousel .card h3 {
-  opacity: 0.5;
+  color: lightslategray;
+  opacity: 0.9;
+}
+
+.skills.dark .carousel .card h3 {
+  background: -webkit-linear-gradient(left, #ff4d4d, #f9cb28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills .carousel .card:hover {
@@ -415,9 +424,12 @@ footer {
   border-color: #7928ca;
 }
 
+.skills.dark .carousel .card img{
+  border: 4px solid white;
+}
+
 .skills.dark .carousel .card:hover img {
-  border-color: #00dfd8;
-  border-width: 2px;
+  border-color:  #00dfd8;
 }
 
 .owl-dots {
@@ -451,6 +463,198 @@ footer {
 .skills.dark .owl-dot.active,
 .skills.dark .owl-dot:hover {
   background: #00dfd8 !important;
+}
+
+.experience .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.experience .title::before {
+  width: 250px;
+}
+
+.experience .title::after {
+  content: "What I have done";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  background: white;
+  color: #7928ca;
+  padding: 5px;
+  transform: translate(-50%);
+}
+
+.experience.dark .title::before {
+  background: white;
+}
+
+.experience.dark .title::after {
+  background: #0e0e0e;
+  color: #00dfd8;
+}
+
+.experience .carousel1 .card {
+  background: white;
+  color: black;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  margin: 5px 0px 20px 0px;
+  transition: all 0.3s ease;
+}
+
+.experience.dark .carousel1 .card a {
+  color: white;
+  font-weight: bold;
+}
+
+.experience .carousel1 .card h3 {
+  text-align: left;
+  opacity: 1;
+  padding: 10px;
+}
+
+.experience .carousel1 .card:hover {
+  box-shadow: 0px 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background: #fefefe;
+}
+
+.experience.dark .carousel1 .card {
+  background: #141414;
+  color: white;
+}
+
+.experience .carousel1 .card .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  justify-content: left;
+  transition: all 0.3s ease;
+}
+
+.experience .carousel1 .card{
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.experience .carousel1 .card:hover {
+  transform: scale(1.05);
+}
+
+.experience .carousel1 .card .text {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+
+.experience .carousel1 .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 4px solid black;
+  z-index: 2;
+}
+
+.experience .carousel1 .card:hover img {
+  border-color: #7928ca;
+}
+
+.experience.dark .carousel1 .card img {
+  border-color: white;
+  border-width: 3px;
+}
+
+.experience.dark .carousel1 .card:hover img {
+  border-color: #00dfd8;
+}
+
+.experience .carousel2 .card {
+  background: white;
+  color: black;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  margin: 5px 0px 20px 0px;
+  transition: all 0.3s ease;
+}
+
+.experience.dark .carousel2 .card a {
+  color: white;
+  font-weight: bold;
+}
+
+.experience .carousel2 .card h3 {
+  text-align: left;
+  opacity: 1;
+  padding: 10px;
+}
+
+.experience .carousel2 .card:hover {
+  box-shadow: 0px 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background: #fefefe;
+}
+
+.experience.dark .carousel2 .card {
+  background: #141414;
+  color: white;
+}
+
+.experience .carousel2 .card .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  justify-content: left;
+  transition: all 0.3s ease;
+}
+
+.experience .carousel2 .card{
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.experience .carousel2 .card:hover {
+  transform: scale(1.05);
+}
+
+.experience .carousel2 .card .text {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+
+.experience .carousel2 .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 4px solid black;
+  z-index: 2;
+}
+
+.experience .carousel2 .card:hover img {
+  border-color: #7928ca;
+}
+
+.experience.dark .carousel2 .card img {
+  border-color: white;
+  border-width: 3px;
+}
+
+.experience.dark .carousel2 .card:hover img {
+  border-color: #00dfd8;
 }
 
 .contact .title {
@@ -637,6 +841,7 @@ footer.dark p a:hover {
 }
 
 footer p span {
+  margin: 0 3px;
   font-size: 1.5em;
   color: red;
 }
@@ -667,6 +872,10 @@ footer p span {
   .menu-button {
     display: block;
     z-index: 9999;
+  }
+
+  .scroll-up-button{
+    transform: scale(0.8);
   }
 
   .navbar .menu {
@@ -750,6 +959,7 @@ footer p span {
   .max-width {
     padding: 0 23px;
   }
+
   .home .max-width {
     margin-top: 100px;
   }
@@ -761,5 +971,27 @@ footer p span {
   }
   .home .home-content .text-3 {
     font-size: 30px;
+  }
+
+  .experience .title {
+    margin-bottom: 50px;
+  }
+
+  .experience .title::before {
+    position: absolute;
+    bottom: -15px;
+    width: 250px;
+  }
+  
+  .experience .title::after {
+    content: "What I have done";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    font-size: 20px;
+    background: white;
+    color: #7928ca;
+    padding: 5px;
+    transform: translate(-50%);
   }
 }

@@ -1,4 +1,5 @@
 var textArray = [
+  "Hello!",
   "你好!",
   "Bonjour!",
   "!السلام عليكم",
@@ -8,7 +9,6 @@ var textArray = [
   "안녕!",
 ];
 var index = 1;
-textArray.unshift($("#halo").text());
 setInterval(function () {
   $("#halo").animate(
     {
