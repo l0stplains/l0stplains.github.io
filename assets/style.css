@@ -512,6 +512,10 @@ footer {
   transition: all 0.3s ease;
 }
 
+.experience .carousel1 .card a{
+  color: #7928ca;
+}
+
 .experience.dark .carousel1 .card a {
   color: white;
   font-weight: bold;
@@ -588,6 +592,10 @@ footer {
   text-align: center;
   margin: 5px 0px 20px 0px;
   transition: all 0.3s ease;
+}
+
+.experience .carousel1 .card a{
+  color: #7928ca;
 }
 
 .experience.dark .carousel2 .card a {
