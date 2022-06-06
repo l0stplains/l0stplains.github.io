@@ -27,6 +27,7 @@ img {
   width: 100%;
   background: white;
   font-family: "Ubuntu", sans-serif;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .navbar.dark {
